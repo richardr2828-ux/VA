@@ -1,0 +1,890 @@
+<!--
+  To change the Fiverr affiliate link, edit the AFFILIATE_LINK variable
+  in the <script> section near the bottom of this file.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Virtual Assistant Services | Data Entry & Online Research</title>
+<meta name="description" content="Looking for help with data entry, web research, spreadsheets, product listings and repetitive online tasks? Explore this recommended virtual assistant service on Fiverr.">
+<link rel="canonical" href="https://example.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Virtual Assistant Services | Data Entry & Online Research">
+<meta property="og:description" content="Get help with data entry, web research, Excel, data collection, product listings and other repetitive tasks — without doing everything yourself.">
+<meta property="og:url" content="https://example.com/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Virtual Assistant Services | Data Entry & Online Research">
+<meta name="twitter:description" content="Get help with data entry, web research, Excel, data collection, product listings and other repetitive tasks — without doing everything yourself.">
+
+<style>
+  :root {
+    /* Color */
+    --ink: #1B2230;
+    --ink-soft: #4A5262;
+    --bg: #FAF9F6;
+    --bg-tint: #EEF3F0;
+    --surface: #FFFFFF;
+    --border: #E4E1D8;
+    --teal: #2B6E5B;
+    --teal-deep: #1E4F41;
+    --coral: #FF6B45;
+    --coral-deep: #E4562F;
+    --gold: #D9A441;
+
+    /* Type */
+    --font-head: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+    --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+
+    /* Spacing scale */
+    --s-1: 0.5rem;
+    --s-2: 0.75rem;
+    --s-3: 1rem;
+    --s-4: 1.5rem;
+    --s-5: 2rem;
+    --s-6: 3rem;
+    --s-7: 4.5rem;
+    --s-8: 6rem;
+
+    --radius: 16px;
+    --radius-sm: 10px;
+    --shadow: 0 8px 28px rgba(27, 34, 48, 0.08);
+    --max-w: 1120px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  img, svg { max-width: 100%; display: block; }
+
+  h1, h2, h3 {
+    font-family: var(--font-head);
+    line-height: 1.15;
+    margin: 0;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  p { margin: 0; }
+
+  a { color: inherit; text-decoration: none; }
+
+  .container {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 var(--s-4);
+  }
+
+  section { padding: var(--s-7) 0; }
+
+  .section-tint { background: var(--bg-tint); }
+
+  .eyebrow {
+    color: var(--teal);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  h2 {
+    font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+    max-width: 620px;
+    margin-top: var(--s-2);
+  }
+
+  .lede {
+    color: var(--ink-soft);
+    max-width: 560px;
+    margin-top: var(--s-3);
+    font-size: 1.05rem;
+  }
+
+  .section-head { margin-bottom: var(--s-6); }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 1.75rem;
+    border-radius: 999px;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    min-height: 48px;
+  }
+
+  .btn:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
+  }
+
+  .btn-primary {
+    background: var(--coral);
+    color: #fff;
+    box-shadow: 0 10px 24px rgba(255, 107, 69, 0.32);
+  }
+
+  .btn-primary:hover { background: var(--coral-deep); transform: translateY(-1px); }
+
+  .btn-block { width: 100%; }
+
+  .cta-sub {
+    display: block;
+    margin-top: var(--s-2);
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+  }
+
+  /* Header */
+  header {
+    padding: var(--s-4) 0;
+  }
+
+  .header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .brand-mark {
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    background: var(--teal);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .header-note {
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    display: none;
+  }
+
+  @media (min-width: 640px) {
+    .header-note { display: block; }
+  }
+
+  /* Hero */
+  .hero {
+    padding-top: var(--s-5);
+    padding-bottom: var(--s-6);
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--s-6);
+    align-items: center;
+  }
+
+  @media (min-width: 900px) {
+    .hero-grid {
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: var(--s-7);
+    }
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 6vw, 3.1rem);
+  }
+
+  .hero .lede {
+    max-width: 520px;
+    font-size: 1.1rem;
+  }
+
+  .trust-strip {
+    margin-top: var(--s-4);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+
+  .hero-actions { margin-top: var(--s-5); }
+
+  .hero-art {
+    position: relative;
+  }
+
+  .hero-art svg { width: 100%; height: auto; }
+
+  /* Problem section icons */
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--s-4);
+  }
+
+  @media (min-width: 640px) {
+    .problem-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  .problem-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: var(--s-4);
+  }
+
+  .problem-item .ic {
+    width: 34px;
+    height: 34px;
+    color: var(--teal);
+    margin-bottom: var(--s-2);
+  }
+
+  .problem-item p { font-size: 0.95rem; color: var(--ink-soft); }
+
+  /* Services grid */
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--s-4);
+  }
+
+  @media (min-width: 640px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (min-width: 980px) {
+    .services-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .service-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: var(--s-5);
+    box-shadow: var(--shadow);
+  }
+
+  .service-card .ic-wrap {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: var(--bg-tint);
+    color: var(--teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--s-3);
+  }
+
+  .service-card .ic-wrap svg { width: 24px; height: 24px; }
+
+  .service-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .service-card p {
+    font-size: 0.93rem;
+    color: var(--ink-soft);
+  }
+
+  /* Trust stats */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--s-4);
+  }
+
+  @media (min-width: 720px) {
+    .stats-grid { grid-template-columns: repeat(5, 1fr); }
+  }
+
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: var(--s-4) var(--s-3);
+    text-align: center;
+  }
+
+  .stat-card .num {
+    font-family: var(--font-head);
+    font-size: 1.4rem;
+    color: var(--teal-deep);
+    font-weight: 700;
+  }
+
+  .stat-card .label {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    margin-top: 0.2rem;
+  }
+
+  .disclaimer-note {
+    margin-top: var(--s-4);
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+  }
+
+  /* Who this is for */
+  .fit-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--s-3);
+  }
+
+  @media (min-width: 720px) {
+    .fit-list { grid-template-columns: 1fr 1fr; }
+  }
+
+  .fit-list li {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: var(--s-3) var(--s-4);
+    font-size: 0.98rem;
+  }
+
+  .fit-list svg {
+    width: 20px;
+    height: 20px;
+    color: var(--coral);
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+
+  /* How it works */
+  .steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--s-5);
+  }
+
+  @media (min-width: 780px) {
+    .steps { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .step {
+    position: relative;
+    padding-left: var(--s-6);
+  }
+
+  .step .step-num {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--teal);
+    color: #fff;
+    font-family: var(--font-head);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step h3 { font-size: 1.1rem; margin-bottom: 0.4rem; }
+  .step p { color: var(--ink-soft); font-size: 0.95rem; }
+
+  .steps-cta { margin-top: var(--s-6); text-align: center; }
+
+  /* Final CTA */
+  .final-cta {
+    background: var(--teal-deep);
+    color: #fff;
+    border-radius: var(--radius);
+    padding: var(--s-7) var(--s-5);
+    text-align: center;
+  }
+
+  .final-cta h2 { color: #fff; max-width: 620px; margin-left: auto; margin-right: auto; }
+  .final-cta .lede { color: rgba(255,255,255,0.82); margin-left: auto; margin-right: auto; }
+  .final-cta .btn-primary { margin-top: var(--s-5); }
+
+  /* Disclosure */
+  .disclosure-box {
+    background: var(--bg-tint);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: var(--s-4);
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  /* Footer */
+  footer {
+    padding: var(--s-6) 0 calc(var(--s-6) + 70px);
+    border-top: 1px solid var(--border);
+  }
+
+  @media (min-width: 720px) {
+    footer { padding-bottom: var(--s-6); }
+  }
+
+  .footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-3);
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+
+  .footer-grid a.btn { align-self: flex-start; margin-top: var(--s-2); }
+
+  /* Reveal animation */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    html { scroll-behavior: auto; }
+  }
+
+  /* Sticky mobile CTA bar */
+  .sticky-cta {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: var(--s-2) var(--s-4);
+    box-shadow: 0 -6px 20px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    gap: var(--s-3);
+    transform: translateY(110%);
+    transition: transform 0.3s ease;
+    z-index: 50;
+  }
+
+  .sticky-cta.is-shown { transform: translateY(0); }
+
+  .sticky-cta .sc-text {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    flex: 1;
+    display: none;
+  }
+
+  @media (min-width: 420px) {
+    .sticky-cta .sc-text { display: block; }
+  }
+
+  @media (min-width: 720px) {
+    .sticky-cta { display: none; }
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+
+<header class="container">
+  <div class="header-row">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">VA</span>
+      Assistant Picks
+    </div>
+    <span class="header-note">Independent service recommendation</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Need a Reliable Virtual Assistant?</h1>
+      <p class="lede">Get help with data entry, web research, Excel, data collection, product listings and other repetitive tasks — without doing everything yourself.</p>
+
+      <div class="trust-strip" aria-label="Service trust indicators">
+        <span>⭐ 5.0 Rated</span>
+        <span>1,000+ Reviews</span>
+        <span>2,000+ Orders</span>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary js-cta" href="#" data-cta-location="hero">
+          👉 View the Service on Fiverr
+        </a>
+        <span class="cta-sub">Check availability, pricing and service details on Fiverr.</span>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="heroArtTitle">
+        <title id="heroArtTitle">Illustration of an organized task board representing virtual assistant work</title>
+        <rect x="0" y="0" width="480" height="420" rx="24" fill="var(--bg-tint)"/>
+        <rect x="40" y="48" width="180" height="120" rx="14" fill="#FFFFFF" stroke="var(--border)"/>
+        <rect x="60" y="72" width="90" height="10" rx="5" fill="var(--teal)"/>
+        <rect x="60" y="94" width="140" height="8" rx="4" fill="#DDE3DE"/>
+        <rect x="60" y="112" width="120" height="8" rx="4" fill="#DDE3DE"/>
+        <rect x="60" y="130" width="60" height="8" rx="4" fill="#DDE3DE"/>
+
+        <rect x="250" y="30" width="190" height="150" rx="14" fill="#FFFFFF" stroke="var(--border)"/>
+        <circle cx="278" cy="58" r="10" fill="var(--coral)"/>
+        <rect x="298" y="52" width="110" height="10" rx="5" fill="var(--ink)"/>
+        <rect x="270" y="84" width="150" height="8" rx="4" fill="#DDE3DE"/>
+        <rect x="270" y="102" width="150" height="8" rx="4" fill="#DDE3DE"/>
+        <rect x="270" y="120" width="90" height="8" rx="4" fill="#DDE3DE"/>
+        <rect x="270" y="146" width="70" height="22" rx="11" fill="var(--bg-tint)"/>
+        <rect x="278" y="153" width="54" height="8" rx="4" fill="var(--teal)"/>
+
+        <rect x="60" y="210" width="360" height="150" rx="14" fill="#FFFFFF" stroke="var(--border)"/>
+        <rect x="84" y="234" width="120" height="10" rx="5" fill="var(--ink)"/>
+        <g>
+          <rect x="84" y="262" width="16" height="16" rx="4" fill="var(--teal)"/>
+          <path d="M87 270l3 3 6-7" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="112" y="264" width="220" height="8" rx="4" fill="#DDE3DE"/>
+        </g>
+        <g>
+          <rect x="84" y="292" width="16" height="16" rx="4" fill="var(--teal)"/>
+          <path d="M87 300l3 3 6-7" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="112" y="294" width="180" height="8" rx="4" fill="#DDE3DE"/>
+        </g>
+        <g>
+          <rect x="84" y="322" width="16" height="16" rx="4" fill="var(--coral)"/>
+          <rect x="112" y="324" width="150" height="8" rx="4" fill="#DDE3DE"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section-tint">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The problem</span>
+      <h2>Stop Spending Hours on Tasks You Could Outsource</h2>
+      <p class="lede">Small, repetitive work adds up fast — and it's usually the first thing worth handing off.</p>
+    </div>
+
+    <div class="problem-grid">
+      <div class="problem-item reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
+        <p>Repetitive data entry</p>
+      </div>
+      <div class="problem-item reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="10" height="14" rx="1"/><path d="M9 19h10v-9"/></svg>
+        <p>Copy-and-paste work</p>
+      </div>
+      <div class="problem-item reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 10v10"/></svg>
+        <p>Spreadsheet updates</p>
+      </div>
+      <div class="problem-item reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.3-4.3"/></svg>
+        <p>Online research</p>
+      </div>
+      <div class="problem-item reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+        <p>Data collection</p>
+      </div>
+      <div class="problem-item reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="12" height="18" rx="1"/><path d="M16 8l4 4-4 4"/></svg>
+        <p>Product listings</p>
+      </div>
+      <div class="problem-item reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h9l3 3v15H6z"/><path d="M9 13h6M9 17h6"/></svg>
+        <p>PDF conversions</p>
+      </div>
+      <div class="problem-item reveal">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg>
+        <p>Administrative tasks</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Services</span>
+      <h2>What Can a Virtual Assistant Help With?</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="ic-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></div>
+        <h3>Data Entry</h3>
+        <p>Accurate, well-organized entry into the format you already use.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="ic-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.3-4.3"/></svg></div>
+        <h3>Web Research</h3>
+        <p>Gathering and summarizing information from reliable sources.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="ic-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 10v10"/></svg></div>
+        <h3>Excel & Google Sheets</h3>
+        <p>Cleaning, formatting and organizing spreadsheets that actually make sense.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="ic-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
+        <h3>Data Collection</h3>
+        <p>Compiling structured lists and datasets from multiple sources.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="ic-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="10" height="14" rx="1"/><path d="M9 19h10v-9"/></svg></div>
+        <h3>Copy & Paste Tasks</h3>
+        <p>Repetitive transfer work handled carefully and consistently.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="ic-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h9l3 3v15H6z"/><path d="M9 13h6M9 17h6"/></svg></div>
+        <h3>PDF to Excel / Word</h3>
+        <p>Converting static documents into editable, usable files.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="ic-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="12" height="18" rx="1"/><path d="M16 8l4 4-4 4"/></svg></div>
+        <h3>Product Listing</h3>
+        <p>Uploading and formatting product details across your store.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="ic-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
+        <h3>Shopify & WordPress Tasks</h3>
+        <p>Routine updates and maintenance on your storefront or site.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="ic-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><path d="M4 21c0-3.3 1.5-6 3-6s3 2.7 3 6M14 21c0-3.3 1.5-6 3-6s3 2.7 3 6"/></svg></div>
+        <h3>Data Scraping</h3>
+        <p>Pulling structured data from public web pages, organized for you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="section-tint">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Track record</span>
+      <h2>Why This Service Stands Out</h2>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card reveal"><div class="num">5.0</div><div class="label">Rating</div></div>
+      <div class="stat-card reveal"><div class="num">1,000+</div><div class="label">Reviews</div></div>
+      <div class="stat-card reveal"><div class="num">2,000+</div><div class="label">Orders Completed</div></div>
+      <div class="stat-card reveal"><div class="num">Level 2</div><div class="label">Seller</div></div>
+      <div class="stat-card reveal"><div class="num">5+ yrs</div><div class="label">Experience</div></div>
+    </div>
+
+    <p class="disclaimer-note">Information and marketplace statistics may change. Please verify the current rating, reviews, pricing and availability on Fiverr before ordering.</p>
+  </div>
+</section>
+
+<!-- WHO THIS IS FOR -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Good fit</span>
+      <h2>This Could Be a Good Fit If You...</h2>
+    </div>
+
+    <ul class="fit-list">
+      <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Run an online business</li>
+      <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Own an e-commerce store</li>
+      <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Need help with spreadsheets</li>
+      <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Have repetitive administrative work</li>
+      <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Need online research done</li>
+      <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Manage a Shopify or WordPress site</li>
+      <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Need help organizing data</li>
+      <li class="reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Want to free up time for what matters</li>
+    </ul>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section-tint">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Next steps</span>
+      <h2>How It Works</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <h3>Review the Service</h3>
+        <p>Click the button to view the Fiverr service in a new tab.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">2</div>
+        <h3>Check the Details</h3>
+        <p>Review pricing, packages, reviews and current availability.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">3</div>
+        <h3>Decide If It's Right for You</h3>
+        <p>Message the seller or place an order directly through Fiverr if it fits your needs.</p>
+      </div>
+    </div>
+
+    <div class="steps-cta reveal">
+      <a class="btn btn-primary js-cta" href="#" data-cta-location="how-it-works">👉 Check the Fiverr Service</a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section>
+  <div class="container">
+    <div class="final-cta reveal">
+      <h2>Ready to Outsource the Busywork?</h2>
+      <p class="lede">Take a look at the service, check the current pricing and see whether this virtual assistant can help with your next project.</p>
+      <a class="btn btn-primary js-cta" href="#" data-cta-location="final-cta">View Service on Fiverr →</a>
+    </div>
+  </div>
+</section>
+
+<!-- DISCLOSURE -->
+<section>
+  <div class="container">
+    <div class="disclosure-box reveal">
+      <strong>Affiliate Disclosure:</strong> This page contains affiliate links. If you purchase a service through a link on this page, I may earn a commission at no additional cost to you.
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-grid">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">VA</span> Assistant Picks</div>
+    <p>This page is independently operated and is not affiliated with, endorsed by, or operated by Fiverr. It contains affiliate links to a Fiverr service.</p>
+    <p>&copy; <span id="year"></span> Assistant Picks. All rights reserved.</p>
+    <a class="btn btn-primary js-cta" href="#" data-cta-location="footer">View Service on Fiverr</a>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <span class="sc-text">Explore this VA service on Fiverr</span>
+  <a class="btn btn-primary btn-block js-cta" href="#" data-cta-location="sticky-bar">View on Fiverr</a>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // ================================
+  // CHANGE YOUR AFFILIATE LINK HERE
+  // ================================
+  const AFFILIATE_LINK = "PASTE_YOUR_FIVERR_AFFILIATE_LINK_HERE";
+
+  // Apply the affiliate link to every CTA button on the page.
+  const ctaButtons = document.querySelectorAll(".js-cta");
+  ctaButtons.forEach(function (btn) {
+    btn.setAttribute("href", AFFILIATE_LINK);
+    btn.setAttribute("target", "_blank");
+    btn.setAttribute("rel", "nofollow sponsored noopener");
+  });
+
+  // Simple, extensible click tracking (no external services).
+  function trackFiverrClick(location) {
+    const detail = { location: location, timestamp: Date.now() };
+    document.dispatchEvent(new CustomEvent("fiverr_cta_click", { detail: detail }));
+    // Extend here later, e.g. send to your own analytics endpoint:
+    // fetch("/api/track", { method: "POST", body: JSON.stringify(detail) });
+    console.log("fiverr_cta_click", detail);
+  }
+
+  ctaButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      trackFiverrClick(btn.dataset.ctaLocation || "unknown");
+    });
+  });
+
+  // Footer year.
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Scroll-reveal animations.
+  const revealEls = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window && revealEls.length) {
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    );
+    revealEls.forEach(function (el) { observer.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add("is-visible"); });
+  }
+
+  // Sticky mobile CTA bar: show after the hero has been scrolled past.
+  const stickyCta = document.getElementById("stickyCta");
+  const heroEl = document.querySelector(".hero");
+  if (stickyCta && heroEl && "IntersectionObserver" in window) {
+    const heroObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          stickyCta.classList.toggle("is-shown", !entry.isIntersecting && entry.boundingClientRect.top < 0);
+        });
+      },
+      { threshold: 0 }
+    );
+    heroObserver.observe(heroEl);
+  }
+})();
+</script>
+
+</body>
+</html>
